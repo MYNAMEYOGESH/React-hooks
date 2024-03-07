@@ -6,6 +6,8 @@ import EffectComp from '../component/EffectComp'
 import Pn from '../component/Pn'
 import Ex2 from '../screens/Ex2'
 import Ex1 from '../screens/Ex1'
+import Ex3 from '../screens/Ex3'
+import Ex4 from '../screens/Ex4'
 
 
 
@@ -16,10 +18,13 @@ function ContainerComp() {
       <Route path={`/hooks/state`} element={<StateComp/>}>
        {/* nested route */}
        
-            <Route path={'useState'} element={<Ex1/>}/>
-            <Route path={'useReducer'} element={<Ex2/>}/>
+            <Route path={`useState`} element={<Ex1/>}/>
+            <Route path={`useReducer`} element={<Ex2/>}/>
       </Route>
-      <Route path={`/hooks/effect`} element={<EffectComp/>}/>
+      <Route path={`/hooks/effect`} element={<EffectComp/>}>
+            <Route path={`useEffect`} element={<Ex3/>} />
+            <Route path={`useLayoutEffect`} element={<Ex4/>} />
+      </Route>
       <Route path={`/`} element={<EffectComp/>}/>
       <Route path={`/*`} element={<Pn/>}/>
     </Routes>
