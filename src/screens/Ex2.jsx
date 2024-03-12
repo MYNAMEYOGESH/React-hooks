@@ -42,7 +42,7 @@ function Ex2() {
 
     <div className="row">
       <div className="col-md-12">
-        <h1 className="text-success" >state = { state.qnty} </h1>
+        <h1 className="text-success text-center" >state = { state.qnty} </h1>
         <button className="btn btn-success" onClick={() => dispatch('inc')}>Inc...</button>
         <button className="btn btn-warning" onClick={() => dispatch('dec')}>dec...</button>
         <button className="btn btn-danger" onClick={() => dispatch('clear')}>clear</button>

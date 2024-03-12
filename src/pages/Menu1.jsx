@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function Menu() {
+function Menu1() {
   return (
     <header>
       <nav className=" navbar navbar-expand-md navbar-dark bg-dark">
@@ -90,4 +90,4 @@ function Menu() {
   )
 }
 
-export default Menu
+export default Menu1
